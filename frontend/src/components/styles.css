@@ -4,3 +4,172 @@
   overflow-y: scroll;
   scrollbar-width: none;
 }
+
+.container-login {
+  display: flex;
+  height: 450px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  flex-direction: column;
+  position: relative;
+}
+
+.login-title {
+  font-size: 28px;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: rgb(51, 110, 24);
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+  width: 300px;
+  font-size: 15px;
+}
+.email-content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 5px;
+  justify-content: space-between;
+  border-bottom: 2px rgb(212, 209, 209) solid;
+}
+.pwd-content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 5px;
+  justify-content: space-between;
+  border-bottom: 2px rgb(212, 209, 209) solid;
+}
+
+input:focus, textarea:focus, select:focus{
+  outline: none;
+  background-color: transparent;
+}
+
+#email,#email:active,#email:focus{
+  outline: none;
+  background-color: white;
+
+  padding: 2px;
+  width: 100%;
+}
+
+
+#password{
+  outline: none;
+  padding: 2px;
+  width: 100%;
+  background: transparent;
+
+  background: #fff !important;
+}
+
+
+.submit-content{
+  width: 100%;
+  background-color: #4681f4;
+  display:grid;
+  place-content: center;
+  padding-top:5px;
+  padding-bottom:5px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.submit-content:active
+{
+  background-color: #4681c4;
+}
+.guest-content{
+  width: 100%;
+  background-color: #dd7973;
+  display:grid;
+  place-content: center;
+  padding-top:5px;
+  padding-bottom:5px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.guest-content:active
+{
+  background-color: #c43b40;
+}
+
+
+.img-logo{
+  position: absolute;
+  top: 10px;
+  height: 100px;
+  width:50% ;
+  background-image: url('./logo3.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.signin-container{
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap :5px;
+}
+.signup-title{
+  font-size: 28px;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: rgb(18, 94, 35);
+  margin-top: 60px;
+}
+
+.first-name{
+  width: 80%;
+  border-bottom: 2px solid gainsboro;
+  padding: 4px;
+}
+.email{
+  width: 80%;
+  border-bottom: 2px solid gainsboro;
+  padding: 4px;
+
+
+}
+.password{
+  width: 80%;
+  border-bottom: 2px solid gainsboro;
+  padding: 4px;
+
+
+}
+.confirm-password{
+  width: 80%;
+  border-bottom: 2px solid gainsboro;
+  padding: 4px;
+  display: flex;
+
+}
+.pic{
+  width:80%;
+}
+input{
+  width: 100%;
+}
+.btn-signup{
+  width: 80%;
+  background-color:#a881af;
+  border-radius: 20px;
+  padding: 5px;
+}
+.btn-signup:active{
+  background-color: #80669d;
+}

@@ -63,6 +63,7 @@ const MyChats = ({ fetchAgain }) => {
         fontFamily="Work sans"
         d="flex"
         w="100%"
+        // bg="black"
         justifyContent="space-between"
         alignItems="center"
       >
@@ -82,6 +83,7 @@ const MyChats = ({ fetchAgain }) => {
         flexDir="column"
         p={3}
         bg="#F8F8F8"
+        
         w="100%"
         h="100%"
         borderRadius="lg"

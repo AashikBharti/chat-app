@@ -3,9 +3,11 @@
 .App {
   min-height: 100vh;
   display: flex;
-  background-image: url("./background.png");
-  background-position: center;
+  background-image: url('./bg6.jpeg');
+  background-repeat: no-repeat;
   background-size: cover;
+  justify-content: center;
+  align-items: center;
 }
 
 ::-webkit-scrollbar {
@@ -20,3 +22,60 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.container{
+  width: 800px;
+  height: 450px;
+  display: flex;
+  opacity:.8;
+
+}
+.sub-img{
+  flex-grow: 1;
+  width: 40%;
+  height: 100%;
+  background-image: url('./bg7.jpeg');
+  background-position:90% 60%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+
+
+.main-content{
+  flex-grow: 2;
+  width: 60%;
+  height: 100%;
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+}
+
+.btn-check{
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  left: -20.7%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.active{
+  background-color: rgba(24, 22, 22, 0.281);
+  color: white;
+  padding: 8px;
+  width: 100px;
+  border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+  border-bottom-left-radius: 110px; /* 100px of height + 10px of border */
+  transition: all 0.5s ease;
+}
+
+
+
